@@ -1,23 +1,98 @@
-# Compiled class file
-*.class
+import java.awt.*; 
+import java.applet.*; 
+public class aaaaaaa extends Applet 
+{
 
-# Log file
-*.log
 
-# BlueJ files
-*.ctxt
+public void paint (Graphics g) 
+{ 
+//خلفيه
+g.setColor(Color.pink);
+g.fillRect(60,50,220,300);
+//ودان
+g.setColor(Color.black); 
+ g.fillOval(60,50,50,50);
+g.fillOval(170,50,50,50); 
+ //وجه
+g.setColor(Color.gray); 
+g.fillOval(90,70,100,90); 
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+//مثلث
+g.setColor(Color.white); 
+int x[]={130,150,140,130}; 
+int y[]={80,80,90,80};  
+g.fillPolygon(x,y,4); 
+//عين
+g.setColor(Color.white); 
+g.fillArc(120,95,18,40,0,180); 
+g.fillArc(140,95,18,40,0,180);
+ 
+g.setColor(Color.black); 
+g.fillRoundRect(130,115,20,10,50,50); 
+g.fillOval(125,100,10,15); 
+g.fillOval(145,100,10,15); 
+// الفم
+g.drawArc(115,120,50,20,190,170); 
+g.drawArc(113,127,15,20,90,85);
+g.drawArc(153,127,15,20,90,-85); 
+g.fillArc(130,130,30,20,180,200); 
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+//لسان
+g.setColor(Color.orange);
+g.fillArc(138,145,15,10,10,165); 
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+ 
+ //جسم
+g.setColor(Color.black); 
+int x1[]={120,170,210,200,190,170,170,110,110,90,70,120}; 
+int y1[]={160,160,220,230,220,190,220,220,210,210,190,160}; 
+g.fillPolygon(x1,y1,12); 
+
+
+//بنطلون + يد شمال
+g.setColor(Color.white); 
+g.fillOval(70,210,50,40);
+g.setColor(Color.red); 
+g.fillArc(38,190,133,60,0,90); 
+g.fillArc(98,180,40,80,135,135); 
+g.fillRect(118,220,52,39);
+ 
+ //يد + كور
+g.setColor(Color.white); 
+ 
+g.fillOval(160,220,50,40);
+g.fillOval(110,200,20,20); 
+g.fillOval(130,200,20,20);
+ 
+//ارجل
+g.setColor(Color.black); 
+ 
+int x2[]={118,138,148,128,118}; 
+int y2[]={259,259,295,290,259}; 
+g.fillPolygon(x2,y2,5);
+ 
+int x3[]={148,168,178,158,148}; 
+int y3[]={259,259,290,295,259}; 
+g.fillPolygon(x3,y3,5); 
+;
+
+//قدم شمال
+g.setColor(Color.yellow);
+g.fillOval(80,290,90,40);
+g.setColor(Color.black);
+g.drawOval(80,290,90,40);
+ //قدم يمين
+g.setColor(Color.yellow);
+g.fillOval(140,290,80,40);
+g.setColor(Color.black);
+g.drawOval(140,290,80,40);
+
+ 
+//خطوط
+g.setColor(Color.black); 
+g.drawLine(170,240,180,230); 
+g.drawLine(170,250,185,235); 
+g.drawLine(180,250,190,240); 
+g.drawArc(150,258,40,40,0,90);
+g.drawArc(130,218,20,40,180,88); 
+}}
